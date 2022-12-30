@@ -26,16 +26,13 @@ const fetchClarifaiData = async (url) => {
 		method: 'POST',
 		headers: {
 			Accept: 'application/json',
-			Authorization: 'Key ' + PAT,
+			Authorization: `Key ${PAT}`,
 		},
 		body: raw,
 	};
 
 	try {
-		const response = await fetch(
-			`https://api.clarifai.com/v2/models/${MODEL_ID}/versions/${MODEL_VERSION_ID}/outputs`,
-			requestOptions
-		);
+		const response = await fetch(`https://api.clarifai.com/v2/models/${MODEL_ID}/versions/${MODEL_VERSION_ID}/outputs`, requestOptions);
 		const data = await response.json();
 		return data.outputs[0].data.regions;
 	} catch (error) {

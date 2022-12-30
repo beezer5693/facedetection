@@ -9,7 +9,7 @@
 
 body {
 	height: 100vh;
-	background: rgb(242, 242, 238);
+	background: rgb(255, 237, 195);
 	padding: 10px;
 	z-index: 100;
 }
@@ -69,7 +69,6 @@ body {
 }
 
 #signin {
-	display: none;
 	background: #63ff9f;
 }
 
@@ -225,7 +224,8 @@ fieldset {
 
 #register-form-button:hover {
 	transform: translate(-3px, -3px);
-	background: #932a93;
+	background: #4ec1ff;
+	color: #1c1c1c;
 	box-shadow: 3px 3px 0px #1c1c1c;
 	transition: 200ms ease-in-out;
 }
@@ -280,8 +280,9 @@ fieldset {
 
 #signin-form-button:hover {
 	transform: translate(-3px, -3px);
-	background: #932a93;
+	background: #63ff9f;
 	box-shadow: 3px 3px 0px #1c1c1c;
+	color: #1c1c1c;
 	transition: 200ms ease-in-out;
 }
 

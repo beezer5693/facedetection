@@ -1,21 +1,17 @@
-import { displayHomePage, displaySignInPage, displayRegisterPage } from '../display/display';
+import { display } from '../display/display';
 
 export const navigate = {
-	pageLocation: 'signin',
 	isSignedIn: false,
 	Home() {
-		this.pageLocation = 'home';
 		this.isSignedIn = true;
-		displayHomePage();
+		display.HomePage();
 	},
 	SignIn() {
-		this.pageLocation = 'signin';
 		this.isSignedIn = false;
-		displaySignInPage();
+		display.SignInPage();
 	},
 	Register() {
-		this.pageLocation = 'register';
 		this.isSignedIn = false;
-		displayRegisterPage();
+		display.RegisterPage();
 	},
 };
